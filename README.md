@@ -48,3 +48,5 @@ Makes sure all Airflow services (`webserver`, `scheduler`, `worker`, `postgres`,
 ![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/download_data_log.png)
 
 2. `preprocess_data(data_path)` -> Cleans titles and subtitles, merges them into metadata, and saves the processed CSV.
+
+![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/preprocess_data_log.png)
