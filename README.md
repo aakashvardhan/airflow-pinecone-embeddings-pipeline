@@ -1,4 +1,4 @@
-# Pinecone + Sentence Transformers Integration with Airflow
+# Medium Article Search Engine using Airflow, Pinecone & Sentence Transformers
 
 This demonstrates how to integrate **Pinecone** vector database and **Sentence Transformers** with **Apache Airflow** to build an end-to-end text embedding and search pipeline.
 
@@ -26,3 +26,19 @@ Makes sure all Airflow services (`webserver`, `scheduler`, `worker`, `postgres`,
 ### Pinecone Setup
 
 1. Create a Pinecone account [here](https://www.pinecone.io/)
+
+![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/pinecone-main-page.png)
+
+2. Get your API key and environment
+
+![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/pinecone-api-key.png)
+
+3. In Airflow, go to Admin -> Variable -> Create and add:
+   - Key: `pinecone_api_key`
+   - Value: your API token.
+
+![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/airflow-variables.png)
+
+### Data Preparation
+
+- Used
