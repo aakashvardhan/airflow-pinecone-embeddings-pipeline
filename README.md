@@ -39,6 +39,12 @@ Makes sure all Airflow services (`webserver`, `scheduler`, `worker`, `postgres`,
 
 ![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/airflow-variables.png)
 
-### Data Preparation
+### Airflow DAG: `Medium_to_Pinecone`
 
-- Used
+**Key Tasks**
+
+1. `download_data()` -> Downloads a public Medium dataset from S3 and stores it in `/tmp/medium_data`.
+
+![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/download_data_log.png)
+
+2. `preprocess_data(data_path)` -> Cleans titles and subtitles, merges them into metadata, and saves the processed CSV.
