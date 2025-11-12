@@ -63,3 +63,7 @@ Makes sure all Airflow services (`webserver`, `scheduler`, `worker`, `postgres`,
 ![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/generate_embedding_1.png)
 
 ![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/generate_embedding_2.png)
+
+5. `test_search_query()` -> Encodes a query string and searches the Pinecone index for the top 5 matching articles.
+
+![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/test_search_query_log.png)
