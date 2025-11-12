@@ -4,7 +4,7 @@ This demonstrates how to integrate **Pinecone** vector database and **Sentence T
 
 ---
 
-## Following Instructions:
+## Setup Instructions:
 
 ### Modify `docker-compose.yaml`
 
