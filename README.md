@@ -50,3 +50,10 @@ Makes sure all Airflow services (`webserver`, `scheduler`, `worker`, `postgres`,
 2. `preprocess_data(data_path)` -> Cleans titles and subtitles, merges them into metadata, and saves the processed CSV.
 
 ![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/preprocess_data_log.png)
+
+3. `create_pinecone_index()` -> Initializes a Pinecone client, deletes any existing index, and creates a fresh one (`semantic-search-fast`) using:
+   - 384 dimensions (MiniLM model)
+   - dot product metric
+   - AWS `us-east-1` region
+
+![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/create_pinecone_index_log.png)
