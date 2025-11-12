@@ -11,3 +11,5 @@ This demonstrates how to integrate **Pinecone** vector database and **Sentence T
 - Added the following dependencies in the Airflow Docker Image:
   - `sentence-transformers`
   - `pinecone-client`
+
+![docker](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/docker-compose-modify.png)
