@@ -13,3 +13,16 @@ This demonstrates how to integrate **Pinecone** vector database and **Sentence T
   - `pinecone-client`
 
 ![docker](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/docker-compose-modify.png)
+
+### Restart Containers
+
+```bash
+docker compose down
+docker compose up airflow-init
+```
+
+Makes sure all Airflow services (`webserver`, `scheduler`, `worker`, `postgres`, `redis`) are running.
+
+### Pinecone Setup
+
+1. Create a Pinecone account [here](https://www.pinecone.io/)
