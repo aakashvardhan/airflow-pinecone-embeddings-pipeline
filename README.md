@@ -60,6 +60,6 @@ Makes sure all Airflow services (`webserver`, `scheduler`, `worker`, `postgres`,
 
 4. `generate_embeddings_and_upsert()` -> Loads data in batches, generates embeddings, and upserts them to the Pinecone index
 
-![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/generate_embeddings_1.png)
+![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/generate_embedding_1.png)
 
-![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/generate_embeddings_2.png)
+![l](https://raw.githubusercontent.com/aakashvardhan/airflow-pinecone-embeddings-pipeline/main/screenshots/generate_embedding_2.png)
